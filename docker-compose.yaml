@@ -6,3 +6,8 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     container_name: watchtower
+  my-node-pipeline-app:
+    image: levonml/my-node-pipeline-app:latest
+    ports:
+      - 3000:8080
+    container_name: my-node-pipeline-app
